@@ -7,15 +7,15 @@
         <link rel="stylesheet" href="../Survey-Forms/style.css">
     </head>
     <body >
-        <header>
-            <nav id="menu-top"></nav>
-        </header>
         <main>
-            <h1>freeCodeCamp Survey Form</h1>
-            <p>Thank you for taking the time 
-                to help us improve the platform</p>
 
-                <form id="forms-container">
+          <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time 
+                to help us improve the platform</p>
+          </header>
+        
+            <form id="forms-container">
 
                    <div class="form-items">
                        <label id="name-label" for="name">Name</label>
@@ -26,8 +26,10 @@
                     <input id="email" class="forms-management" type="email" required="" name="email" placeholder="Enter your email">
                    </div>
                    <div class="form-items">
-                    <label id="age-label" for="number">Age</label>
-                    <input id="age" class="forms-management" type="number" required="" name="age" placeholder="Age" min="10" max="99">
+                    <label id="number-label" for="number">Age
+                        <span class="clue">(optional)</span>
+                    </label>
+                    <input id="number" class="forms-management" type="number" required="" name="age" placeholder="Age" min="10" max="99">
                    </div>
                    <div class="form-items">
                     <p>Which option best describes your current role?</p>
@@ -91,6 +93,8 @@
                   </button>
                 </div>
                 </form>
+                <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+                <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
             
             </main>
 
